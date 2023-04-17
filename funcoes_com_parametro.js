@@ -37,7 +37,7 @@ function verifyFirst(palavra, letra) {
 //EXERCICIO 5
 
 function verifyQuacker(inicio, termino) {
-  if (inicio >= 11 && inicio <= 18) {
+  if (inicio >= 11 && termino <= 19 ) {
     return "O /pergunta está em horário de funcionamento.";
   } else {
     return "O /pergunta não está em horário de funcionamento.";
