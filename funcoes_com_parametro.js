@@ -87,17 +87,12 @@ Desenvolva uma função com dois parâmetros para saber se o horário correspond
 
 */
 
-function verifyQuacker(inicio, termino) {
-  /* Nesta atividade nosso desafio é cobrir as duas condições eu um único if (início e termino), ára isso usaremos o comparado && que soma duas condicionais e só
-  passa caso as duas forem verdadeiras. CUIDADO PARA NÃO CONFUNDIR COM O OPERADOR || (OU).
-  
-  Uma vez validado, retornaremos a string condizente.
-  */
-
-  if (inicio >= 11 && termino <= 19) {
-    // fazemos as duas verificações   (verificação A && verificação B) note que "somamos" as duas condicionais usando o operador &&.
-    return "O /pergunta está em horário de funcionamento."; // Uma vez sendo ambos verdadeiro, faremos o retorno adequado.
+function verifyQuacker(horaAtendimento) {
+  // criamos uma função que receberá a hora que dado atendimento é solicitado, neste caso não precisamos nos preocupar com os minutos.
+  if (horaAtendimento >= 11 && horaAtendimento <= 23) {
+    // fazemos as duas verificações neste if, afim de verificar se o paramentro está entre 11 e 23.
+    return "O /pergunta está em horário de funcionamento."; // caso a condicional seja verdadeira, retornamos a frase condizente
   } else {
-    return "O /pergunta não está em horário de funcionamento."; // Caso ao menos uma das condicionais seja falsa já caimos no else e retornamos uma istring mais adequada para o caso.
+    return "O /pergunta não está em horário de funcionamento."; // caso seja falsa retornamos a frase condizente.
   }
 }
