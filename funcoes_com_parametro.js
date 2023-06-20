@@ -89,7 +89,7 @@ Desenvolva uma função com dois parâmetros para saber se o horário correspond
 
 function verifyQuacker(horaAtendimento) {
   // criamos uma função que receberá a hora que dado atendimento é solicitado, neste caso não precisamos nos preocupar com os minutos.
-  if (horaAtendimento >= 11 && horaAtendimento <= 23) {
+  if (horaAtendimento >= 11 && horaAtendimento < 23) {
     // fazemos as duas verificações neste if, afim de verificar se o paramentro está entre 11 e 23.
     return "O /pergunta está em horário de funcionamento."; // caso a condicional seja verdadeira, retornamos a frase condizente
   } else {
